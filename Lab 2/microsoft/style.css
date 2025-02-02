@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  font-size: 13px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1600px;
+  flex-grow: 1;
+  height: 54px;
+  margin: 0 auto;
+  margin-bottom: 2px;
+  margin: 0 5%;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__logo {
+  width: 137px;
+}
+
+.header__logo img {
+  width: 108px;
+}
+
+.header__nav ul {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+
+.header__right li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header__right img {
+  width: 16px;
+}
+
+.header__menu select {
+  background: none;
+  border: none;
+}
+
+.header__menu option {
+  font-weight: 400;
+}
+
+.header__sign-in-icon {
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.625rem;
+  padding: 1rem 1.5rem;
+  background: #0067b8;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.slide .container {
+  display: flex;
+  align-items: center;
+  max-width: 1600px;
+  flex-grow: 1;
+  margin: 0 auto;
+  margin: 0 5%;
+}
+
+.slider {
+  width: 100%;
+  max-width: 1920px;
+}
+
+.slide {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  height: 495px;
+  width: 100%;
+  background: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-AI-11Ed-Sapphire-MC001-3000x1682:VP5-1920x600");
+  background-size: cover;
+  background-position: center;
+}
+
+.slide__text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 41.66667%;
+  padding: 3rem;
+  margin-top: 3rem;
+  background: #ffffff;
+  box-shadow: 0 0.1875rem 0.4375rem 0 rgba(0, 0, 0, 0.13),
+    0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.11);
+}
+
+.slide__title {
+  margin-bottom: 20px;
+  font-size: 37px;
+  font-weight: 600;
+}
+
+.slide__description {
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.slide__btn,
+.card__btn {
+  padding: 10px 12px;
+  background: #0067b8;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.slider__controller {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  margin-bottom: 48px;
+}
+
+.slider__controller button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+}
+
+.slider__pause {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000 !important;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.slider__pause img {
+  width: 12px;
+}
+
+.slider__left img,
+.slider__right img {
+  width: 20px;
+}
+
+.slider__dot img {
+  width: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .container {
+  max-width: 1600px;
+  flex-grow: 1;
+  margin: 0 auto;
+  margin: 0 5%;
+}
+
+.shop-categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0067b8;
+  margin-bottom: 48px;
+}
+
+.shop-categories li {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 24px;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+}
+
+.shop-categories img {
+  width: 40px;
+}
+
+.shop-cards {
+  display: flex;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.card {
+  list-style: none;
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 12px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  height: 100%;
+  box-shadow: 0 0.1875rem 0.4375rem 0 rgba(0, 0, 0, 0.13),
+    0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.11);
+}
+
+.card__img {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.card__title,
+.card__description,
+.card__btn {
+  margin: 0 24px;
+}
+
+.card__title {
+  margin-bottom: 16px;
+  font-size: 29px;
+  font-weight: 600;
+}
+
+.card__btn {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
