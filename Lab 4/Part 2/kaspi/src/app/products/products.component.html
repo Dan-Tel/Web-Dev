@@ -1,0 +1,26 @@
+<ul class="products-list">
+  <li *ngFor="let p of products">
+    <div class="product">
+      <img src="{{ p.img }}" />
+
+      <div class="bottom">
+        <div class="info">
+          <h2>{{ p.name }}</h2>
+          <p>{{ p.description }}</p>
+          <p>{{ p.rating }}</p>
+        </div>
+
+        <a href="{{ p.link }}" target="_blank">Открыть в Kaspi</a>
+
+        <a
+          class="share"
+          href="https://t.me/daniyar_telengutov?text=Хочу купить товар по ссылке: {{
+            p.link
+          }}"
+          target="_blank"
+          >Share</a
+        >
+      </div>
+    </div>
+  </li>
+</ul>
