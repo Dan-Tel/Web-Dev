@@ -1,0 +1,11 @@
+<ul class="categories-list">
+  <li *ngFor="let c of categoryNames">
+    <button (click)="setCurrentCategory(c)">{{ c }}</button>
+  </li>
+</ul>
+
+<app-products
+  [products]="getCurrentCategoryProducts()"
+  (delete)="onDelete($event)"
+  (like)="onLike($event)"
+></app-products>

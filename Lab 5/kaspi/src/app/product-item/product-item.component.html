@@ -1,0 +1,27 @@
+<div class="product">
+  <img src="{{ p.img }}" />
+
+  <div class="bottom">
+    <div class="info">
+      <h2>{{ p.name }}</h2>
+      <p>{{ p.description }}</p>
+      <p>{{ p.rating }}</p>
+      <p>{{ p.likes }} ❤️</p>
+    </div>
+
+    <a href="{{ p.link }}" target="_blank">Открыть в Kaspi</a>
+
+    <button class="delete" (click)="onDelete(p.id)">Delete</button>
+
+    <button class="like" (click)="onLike(p.id)">Like</button>
+
+    <a
+      class="share"
+      href="https://t.me/daniyar_telengutov?text=Хочу купить товар по ссылке: {{
+        p.link
+      }}"
+      target="_blank"
+      >Share</a
+    >
+  </div>
+</div>

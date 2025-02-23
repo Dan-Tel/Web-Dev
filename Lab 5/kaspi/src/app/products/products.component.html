@@ -1,0 +1,9 @@
+<ul class="products-list">
+  <li *ngFor="let p of products">
+    <app-product-item
+      [p]="p"
+      (delete)="onDelete($event)"
+      (like)="onLike($event)"
+    ></app-product-item>
+  </li>
+</ul>
