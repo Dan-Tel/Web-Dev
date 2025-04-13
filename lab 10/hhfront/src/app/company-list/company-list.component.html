@@ -1,0 +1,9 @@
+<ul>
+  @for (c of companies; track c.id) {
+  <li>
+    <h3>
+      <a routerLink="{{ c.id }}">{{ c.name }} | {{ c.city }}</a>
+    </h3>
+  </li>
+  }
+</ul>
